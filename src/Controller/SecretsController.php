@@ -5,11 +5,11 @@ namespace UserFrosting\Sprinkle\Secrets\Controller;
 /**
  * Rules controller
  *
- * @package UserFrosting-RegSevak
+ * @package UserFrosting-Secrets
  * @author Srinivas Nukala
  * @link http://srinivasnukala.com
  */
-class SecretsController//extends SimpleController
+class SecretsController
 
 {
 
@@ -20,9 +20,7 @@ class SecretsController//extends SimpleController
         $this->loadSecrets($key);
     }
 
-    public function loadSecrets($key = 'NOKEY')
-    {
-    }
+    public function loadSecrets($key = 'NOKEY') {}
 
     public function getSecret($secretName, $defaultValue = '_NOT_SET_')
     {
